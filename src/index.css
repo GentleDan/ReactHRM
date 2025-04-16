@@ -1,5 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,500;1,500&display=swap");
 @import "tailwindcss";
 @plugin "daisyui" {
-    themes: light --default;
-    root: ":root";
+  themes: light --default;
+  root: ":root";
+}
+
+body {
+  font-family: "Inter Tight", sans-serif;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE и Edge */
+  scrollbar-width: none; /* Firefox */
 }

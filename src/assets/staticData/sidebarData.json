@@ -1,0 +1,60 @@
+{
+  "logo": "src/assets/images/logo.svg",
+  "toggleButton": "src/assets/images/toggle.svg",
+  "footerButton": {
+    "icon": "src/assets/images/about.svg",
+    "title": "О сервисе"
+  },
+  "personal": [
+    {
+      "icon": "src/assets/images/structure.svg",
+      "title": "Структура ВКК"
+    },
+    {
+      "icon": "src/assets/images/organization.svg",
+      "title": "Организация"
+    },
+    {
+      "icon": "src/assets/images/documents.svg",
+      "title": "Реестр документов ВКК"
+    },
+    {
+      "icon": "src/assets/images/calendar.svg",
+      "title": "Календарь ВКК"
+    },
+    {
+      "icon": "src/assets/images/payment.svg",
+      "title": "Тарифы и оплата"
+    }
+  ],
+  "workplace": [
+    {
+      "icon": "src/assets/images/star.svg",
+      "title": "Руководитель МО"
+    },
+    {
+      "icon": "src/assets/images/star.svg",
+      "title": "Ответственное лицо"
+    },
+    {
+      "icon": "src/assets/images/star.svg",
+      "title": "Уполномоченное лицо"
+    },
+    {
+      "icon": "src/assets/images/star.svg",
+      "title": "Председатель ВК"
+    },
+    {
+      "icon": "src/assets/images/star.svg",
+      "title": "Секретарь ВК"
+    },
+    {
+      "icon": "src/assets/images/star.svg",
+      "title": "Член ВК"
+    },
+    {
+      "icon": "src/assets/images/star.svg",
+      "title": "Администратор клиники"
+    }
+  ]
+}

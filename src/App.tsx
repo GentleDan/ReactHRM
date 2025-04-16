@@ -1,11 +1,14 @@
-import Sidebar from "./components/common/sidebar/Sidebar.tsx";
+import SidebarWrapper from "./components/common/sidebar/SidebarWrapper.tsx";
 
 function App() {
-	return (
-		<>
-			<Sidebar />
-		</>
-	);
+  return (
+    <>
+      <div>
+        <SidebarWrapper />
+      </div>
+      {/* mainContent */}
+    </>
+  );
 }
 
 export default App;

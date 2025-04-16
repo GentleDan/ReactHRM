@@ -1,16 +1,26 @@
-import logoImg from "../../../assets/newLogo.svg";
+import { PageButton } from "../utils/buttons/pageButton/PageButton.tsx";
+import CollapseElement from "../utils/collapse/CollapseElement.tsx";
+import sidebarData from "../../../assets/staticData/sidebarData.json";
 
 function Sidebar() {
-	return (
-		<>
-			<div className="h-svh w-85 bg-gray-100 p-10 border-r border-gray-200">
-				<img src={logoImg} alt="LogoImg" />
-				<nav>
-					<ul></ul>
-				</nav>
-			</div>
-		</>
-	);
+  return (
+    <div className="h-screen w-85 bg-gray-100 p-10 border-r border-gray-200 flex flex-col overflow-y-auto hide-scrollbar">
+      <img src={sidebarData.logo} alt="LogoImg" />
+      <nav className="flex flex-col flex-1/2">
+        <ul>
+          <li>
+            <CollapseElement index={0} title={"Личный кабинет"} elements={sidebarData.personal} />
+          </li>
+          <li>
+            <CollapseElement index={1} title={"Рабочее пространство"} elements={sidebarData.workplace} />
+          </li>
+        </ul>
+        <div className="mt-auto">
+          <PageButton icon={sidebarData.footerButton.icon} title={sidebarData.footerButton.title} />
+        </div>
+      </nav>
+    </div>
+  );
 }
 
 export default Sidebar;
