@@ -1,13 +1,15 @@
 import SidebarWrapper from "./components/common/sidebar/SidebarWrapper.tsx";
+import Header from "./components/common/header/Header.tsx";
 
 function App() {
   return (
-    <>
-      <div>
-        <SidebarWrapper />
+    <div className="flex">
+      <SidebarWrapper />
+      <div className="flex-2/3">
+        <Header />
+        {/* mainContent */}
       </div>
-      {/* mainContent */}
-    </>
+    </div>
   );
 }
 

@@ -13,6 +13,36 @@ body {
   display: none;
 }
 .hide-scrollbar {
-  -ms-overflow-style: none; /* IE и Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%) scale(0, 1);
+    width: 0;
+  }
+  100% {
+    transform: translateX(0) scale(1, 1);
+    width: 21.25rem;
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.3s ease-in-out forwards;
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateX(0) scale(1, 1);
+    width: 21.25rem;
+  }
+  100% {
+    transform: translateX(-100%) scale(0, 1);
+    width: 0;
+  }
+}
+
+.animate-slide-out {
+  animation: slide-out 0.3s ease-in-out forwards;
 }
